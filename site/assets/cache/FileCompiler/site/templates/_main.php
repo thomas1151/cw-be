@@ -61,8 +61,8 @@
   integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
   crossorigin="anonymous"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.6/lib/draggable.bundle.js"></script>
-	<script src="<?php echo $config->urls->templates?>scripts/main.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
 
+	<script src="<?php echo $config->urls->templates?>scripts/main.js"></script>
 </body>
 </html>

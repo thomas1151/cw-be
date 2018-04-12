@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import "dragula.min.css";
 html {
   line-height: 1.15;
   /* 1 */
@@ -426,4 +427,12 @@ button {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+li.gu-mirror {
+  list-style: none;
+  padding: 1em .5em;
+  margin: .5em;
+  border: 1px solid #f2f2f2;
+  border-radius: .5em;
+  color: white;
 }
