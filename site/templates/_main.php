@@ -36,78 +36,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title><?php echo $title; ?></title>
 	<meta name="description" content="<?php echo $page->summary; ?>" />
+
+
+
 	<link href='//fonts.googleapis.com/css?family=Lusitana:400,700|Quattrocento:400,700' rel='stylesheet' type='text/css' />
+	
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/main.css" />
+
 </head>
-<body class="<?php if($sidebar) echo "has-sidebar "; ?>">
+<body>
 
-	<a href="#main" class="visually-hidden element-focusable bypass-to-main">Skip to content</a>
 
-	<!-- top navigation -->
-	<ul class='topnav' role='navigation'><?php
-		// top navigation consists of homepage and its visible children
-		foreach($homepage->and($homepage->children) as $item) {
-			if($item->id == $page->rootParent->id) {
-				echo "<li class='current' aria-current='true'><span class='visually-hidden'>Current page: </span>";
-			} else {
-				echo "<li>";
-			}
-			echo "<a href='$item->url'>$item->title</a></li>";
-		}
+	<main>
+		<?php require("assets/pages/{$template_name}.php")?>
 
-		// output an "Edit" link if this page happens to be editable by the current user
-		if($page->editable()) echo "<li class='edit'><a href='$page->editUrl'>Edit</a></li>";
-	?></ul>
+	</main>
 
-	<!-- search form-->
-	<form class='search' action='<?php echo $pages->get('template=search')->url; ?>' method='get'>
-		<label for='search' class='visually-hidden'>Search:</label>
-		<input type='text' name='q' placeholder='Search' id='search' value='<?php echo $sanitizer->entities($input->whitelist('q')); ?>' />
-		<button type='submit' name='submit' class='visually-hidden'>Search</button>
-	</form>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<!-- breadcrumbs -->
-	<div class='breadcrumbs' role='navigation' aria-label='You are here:'><?php
-		// breadcrumbs are the current page's parents
-		foreach($page->parents() as $item) {
-			echo "<span><a href='$item->url'>$item->title</a></span> "; 
-		}
-		// optionally output the current page as the last item
-		echo "<span>$page->title</span> "; 
-	?></div>
+	<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
 
-	<div id='main'>
-
-		<!-- main content -->
-		<div id='content'>
-			<h1><?php echo $title; ?></h1>
-			<?php echo $content; ?>
-		</div>
-
-		<!-- sidebar content -->
-		<?php if($sidebar): ?>
-		<aside id='sidebar'>
-			<?php echo $sidebar; ?>
-		</aside>
-		<?php endif; ?>
-
-	</div>
-
-	<!-- footer -->
-	<footer id='footer'>
-		<p>
-		Powered by <a href='http://processwire.com'>ProcessWire CMS</a>  &nbsp; / &nbsp; 
-		<?php 
-		if($user->isLoggedin()) {
-			// if user is logged in, show a logout link
-			echo "<a href='{$config->urls->admin}login/logout/'>Logout ($user->name)</a>";
-		} else {
-			// if user not logged in, show a login link
-			echo "<a href='{$config->urls->admin}'>Admin Login</a>";
-		}
-		?>
-		</p>
-	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.6/lib/draggable.bundle.js"></script>
+	<script src="<?php echo $config->urls->templates?>scripts/main.js"></script>
 
 </body>
 </html>

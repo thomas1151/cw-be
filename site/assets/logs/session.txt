@@ -1,0 +1,4 @@
+2018-04-12 18:06:34	admin	http://localhost/mats/backend/login/	Successful login for 'admin'
+2018-04-12 18:56:40	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 0.0.0.0)
+2018-04-12 23:15:51	admin	http://localhost/mats/backend/login/	Successful login for 'admin'
+2018-04-12 23:56:21	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 0.0.0.0)

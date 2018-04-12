@@ -1,1 +1,7 @@
 2018-04-12 18:04:11	guest	http://localhost/mats/	Added filedata to DB schema for 'images'
+2018-04-12 18:07:25	admin	http://localhost/mats/backend/setup/template/removeFields	Deleted field "body" data in 0 row(s) from 0 page(s) using template "mat". [page-by-page]
+2018-04-12 18:07:25	admin	http://localhost/mats/backend/setup/template/removeFields	Deleted field "sidebar" data in 0 row(s) from 0 page(s) using template "mat". [page-by-page]
+2018-04-12 18:07:25	admin	http://localhost/mats/backend/setup/template/removeFields	Deleted field "images" data in 0 row(s) from 0 page(s) using template "mat". [page-by-page]
+2018-04-12 18:07:53	admin	http://localhost/mats/backend/setup/template/removeFields	Deleted field "headline" data in 0 row(s) from 0 page(s) using template "element". [page-by-page]
+2018-04-12 18:07:53	admin	http://localhost/mats/backend/setup/template/removeFields	Deleted field "body" data in 0 row(s) from 0 page(s) using template "element". [page-by-page]
+2018-04-12 18:07:53	admin	http://localhost/mats/backend/setup/template/removeFields	Deleted field "sidebar" data in 0 row(s) from 0 page(s) using template "element". [page-by-page]

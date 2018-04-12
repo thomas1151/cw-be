@@ -6,3 +6,18 @@
 2018-04-12 18:04:11	Update #10: Installed ProcessLogger and added: Setup > Logs
 2018-04-12 18:04:11	Update #10: Installed InputfieldIcon
 2018-04-12 18:04:11	Update #10: Completed!
+2018-04-12 18:06:28	Update #11: Initializing update
+2018-04-12 18:06:28	Update #11: Initializing update
+2018-04-12 18:06:28	Update #11: Completed!
+2018-04-12 18:06:34	Update #12: Initializing update
+2018-04-12 18:06:34	Update #12: Added 'published' column to pages table
+2018-04-12 18:06:34	Update #12: Populated values to 'published' for 48 pages
+2018-04-12 18:06:34	Update #12: Completed!
+2018-04-12 18:06:34	Update #13: Initializing update
+2018-04-12 18:06:34	Update #13: Completed!
+2018-04-12 18:06:35	Update #14: Initializing update
+2018-04-12 18:06:35	Update #14: Completed!
+2018-04-12 18:06:35	Update #15: Initializing update
+2018-04-12 18:06:35	Update #15: Completed!
+2018-04-12 18:06:35	Update #16: Initializing update
+2018-04-12 18:06:35	Update #16: Completed!
