@@ -1,29 +1,19 @@
 
-// $(function () {
+var last_topic_container = document.querySelector("#last-topic span");
+var drake = dragula({
+    isContainer: function (el) {
+        return el.classList.contains('scale-list');
+    },
+    revertOnSpill: true,
 
-//     $(".scale-list").sortable({
-//         connectWith: ".scale-list",
-//         scroll: false,
-//         receive: function (event, ui) {
-//             console.log("dropped on = " + this.id); // Where the item is dropped
-//             console.log("sender = " + ui.sender[0].id); // Where it came from
-//             console.log("item = " + ui.item[0].innerHTML); //Which item (or ui.item[0].id)
-//         }
-//     }).disableSelection();
-
-//     // $(".item").draggable({
-//     //     revert: true
-//     // })
-//     $('#active-topic').droppable({
-//         drop: function (event,ui) {
-//             console.log(ui);
-//             $(this).text(ui.draggable[0].innerText);
-//         },
-//         over: function(){
-//             $(this).css("background", "dodgerblue");
-//         }
-//     });
-
-// });
-
-dragula($('.scale-list').toArray());
+});
+drake.containers.push(document.querySelector("#active-topic"));
+drake.on("drop", function(el, target, source, sibling){
+        if(target.classList.contains('active-topic')){
+            target.innerText = el.innerText;
+            last_topic_container.innerText = target.innerText;
+            source.append(el);
+            console.log(target);
+        }
+    
+})

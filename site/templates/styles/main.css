@@ -337,9 +337,10 @@ body {
   border: 1px solid #f6f6f6;
   border-radius: 2em;
   transition: .2s all;
+  background: #6f7d95;
 }
 .scale .scale-value:hover {
-  background: blue;
+  background: #1da1f2;
 }
 .scale.row {
   height: 100%;
@@ -358,26 +359,35 @@ body {
   margin: .5em;
   border: 1px solid #f2f2f2;
   border-radius: .5em;
+  color: #343f52;
+  background: #f1f1f1;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 .scale .scale-group {
-  border-left: 1px solid rgba(200, 200, 200, 0.3);
-  border-right: 1px solid rgba(200, 200, 200, 0.3);
+  border-left: 1px solid rgba(200, 200, 200, 0.2);
+  border-right: 1px solid rgba(200, 200, 200, 0.2);
   padding: 0;
 }
 .scale .scale-header {
-  background: #272778;
+  background: none;
   padding: 1em;
 }
 .workspace {
-  background: #484848;
+  background: #ececec;
   flex: 1;
 }
 .controls {
-  background: #888;
+  background: #6f7d95;
   padding: 1em;
 }
 .control-group {
   text-align: center;
+}
+.control-group button {
+  background: #1da1f2;
+  color: #f1f1f1;
+  letter-spacing: -0.04em;
+  font-weight: 600;
 }
 .right-controls {
   text-align: right;
@@ -389,6 +399,27 @@ body {
   padding: 1em;
   border: 1px solid #f6f6f6;
   border-radius: 2px;
+  font-weight: bolder;
+  letter-spacing: -0.03em;
+  font-size: 120%;
+  color: #f1f1f1;
+}
+.active-topic:before {
+  font-style: italic;
+  color: #ececec;
+  font-size: 90%;
+  font-weight: 300;
+  content: "Current Topic: ";
+}
+.last-topic {
+  text-align: center;
+  padding: 1em;
+  font-style: italic;
+  color: #f6f6f6;
+}
+.last-topic span {
+  font-weight: bolder;
+  letter-spacing: -0.03em;
 }
 button {
   border: 0;
@@ -410,7 +441,7 @@ button {
   padding-right: 0 !important;
 }
 .menu-overlay {
-  background: rgba(50, 50, 50, 0.4);
+  background: #343f52;
   height: 100%;
 }
 .menu-overlay ul {
@@ -434,5 +465,8 @@ li.gu-mirror {
   margin: .5em;
   border: 1px solid #f2f2f2;
   border-radius: .5em;
+  color: #343f52;
+  background: #f1f1f1;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
   color: white;
 }

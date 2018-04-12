@@ -54,6 +54,8 @@
                     <div class="left-controls control-group col-xs-4">
                         <div class="row">
                             <button class="menu col-xs-3">Show Menu</button>
+                            <div class="last-topic col-xs" id="last-topic">Last Topic: <span>Not</span></div>
+
                         </div>
                     </div>
 
