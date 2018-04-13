@@ -23,3 +23,4 @@ if(count($page->images)) {
 	$sidebar = $page->sidebar; 
 }
 
+$template_name = "default";
