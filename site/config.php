@@ -118,5 +118,5 @@ $config->installed = 1523548943;
  * Installer: HTTP Hosts Whitelist
  * 
  */
-$config->httpHosts = array('localhost', 'mats.atticcs.co.uk');
+$config->httpHosts = array('localhost', 'mats.atticcs.co.uk','192.168.1.112');
 

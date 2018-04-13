@@ -4,11 +4,7 @@
         
         <div class="menu-overlay col-xs-2" id="menu-overlay">
             <ul class="column menu scale-list">
-                <li class="item col-xs draggable">Holiday</li>
-                <li class="item col-xs draggable">Holiday1</li>
-                <li class="item col-xs draggable">Holiday2</li>
-                <li class="item col-xs draggable">Holiday3</li>
-                <li class="item col-xs draggable">Holiday4</li>
+
             </ul>
         </div>
         <div class="view-wrapper  col-xs-12">

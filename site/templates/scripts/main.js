@@ -44,10 +44,19 @@ function Element(text,image,id){
     this.id    = id;
 
     this.renderThis = function(target="#menu-overlay .scale-list"){
-        $('<li />', {
+        elem = $('<li />', {
             "class": 'item col-xs draggable',
             text: this.text,
-        }).appendTo(target);
+
+        })
+        console.log(this);
+        if(this.image){
+            $('<img />',{
+                "class":"elem-image",
+                "src":this.image,
+            }).prependTo(elem)
+        }
+        elem.appendTo(target);
     }
 
 }
@@ -76,6 +85,7 @@ drake.on("drop", function(el, target, source, sibling){
         }
     
 })
+window.addEventListener('touchmove', function () { })
 
 var theToggle = document.getElementById('menu-toggle');
 var menuOverlay = document.getElementById('menu-overlay');
@@ -114,11 +124,11 @@ $.ajax(site_root_url+'api/elements')
     .done(function (data) {
 
         json_data = JSON.parse(data);
+        console.log(json_data);
         for (i = 0; i < json_data.length; i++) {
             sys.existingElements.push(
-                new Element(json_data[i].title, "", json_data[i].id)
+                new Element(json_data[i].title, json_data[i].image, json_data[i].id)
             );
-            console.log(sys);
             sys.existingElements[sys.existingElements.length - 1].renderThis();       
         }
 

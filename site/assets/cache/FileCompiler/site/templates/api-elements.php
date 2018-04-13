@@ -8,5 +8,5 @@
 // $content = $page->body . renderNav($page->children); 
 
 $search_string = "template=element";
-$fields = ['title', 'created','id'];
+$fields = ['title', 'created','image','id'];
 $template_name = "api-call";
