@@ -84,3 +84,4 @@
 2018-04-13 15:02:07	admin	http://localhost/mats/api/scales/	Parse Error: 	syntax error, unexpected 'echo' (T_ECHO) (line 30 of /opt/lampp/htdocs/mats/site/templates/assets/pages/api-call.php)
 2018-04-13 15:03:07	admin	http://localhost/mats/api/scales/	Parse Error: 	syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' (line 25 of /opt/lampp/htdocs/mats/site/templates/assets/pages/api-call.php)
 2018-04-13 15:03:07	admin	http://localhost/mats/api/scales/	Parse Error: 	syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' (line 25 of /opt/lampp/htdocs/mats/site/templates/assets/pages/api-call.php)
+2018-04-13 16:27:11	guest	http://192.168.1.112/mats/public_html/	Compile Error: 	require(): Failed opening required 'assets/pages/.php' (include_path='.:/opt/lampp/lib/php') (line 57 of /opt/lampp/htdocs/mats/public_html/site/templates/_main.php)
