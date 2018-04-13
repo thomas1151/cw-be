@@ -2665,6 +2665,8 @@ body {
   flex-direction: row;
 }
 .scale {
+  display: flex;
+  flex: 1;
   color: white;
 }
 .scale .scale-value {
@@ -2679,13 +2681,11 @@ body {
 .scale .scale-value:hover {
   background: #1da1f2;
 }
-.scale.row {
-  height: 100%;
-}
 .scale .scale-list {
-  height: 100%;
-  display: inline-block;
   width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 .scale .scale-list ul {
   height: 100%;
@@ -2693,6 +2693,7 @@ body {
   margin: 0;
 }
 .scale .scale-list .item {
+  flex-grow: 0;
   list-style: none;
   padding: 1em .5em;
   margin: .5em;
@@ -2706,14 +2707,19 @@ body {
   border-left: 1px solid rgba(200, 200, 200, 0.2);
   border-right: 1px solid rgba(200, 200, 200, 0.2);
   padding: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 .scale .scale-header {
+  display: flex;
   background: none;
   padding: 1em;
 }
 .workspace {
   background: #ececec;
   flex: 1;
+  display: flex;
 }
 .controls {
   background: #6f7d95;
@@ -2811,6 +2817,7 @@ button {
   height: 100%;
 }
 li.gu-mirror {
+  flex-grow: 0;
   list-style: none;
   padding: 1em .5em;
   margin: .5em;
@@ -2823,10 +2830,18 @@ li.gu-mirror {
 .elem-image {
   max-width: 100%;
   padding: 0;
-  max-height: 100%;
+  margin: 0 auto .5em auto;
+  max-height: 5rem;
   display: block;
   box-sizing: border-box;
-  margin: 0 auto;
+}
+i.fa {
+  display: block;
+  width: 100%;
+  padding: .5rem 0;
+}
+.mobile-hidden {
+  display: none;
 }
 /*==================================================
 =            Bootstrap 3 Media Queries             =
@@ -2835,31 +2850,20 @@ li.gu-mirror {
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-  .elem-image {
-    padding: 0em 1em .5em 1em;
-  }
   .workspace .scale-list .elem-image {
     max-width: 100%;
-    padding: 0 2em;
   }
 }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-  .workspace .scale-list .elem-image {
-    max-width: 90%;
-    padding: 0 2.5em;
+  .mobile-hidden {
+    display: inherit;
   }
 }
 /* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  .elem-image {
-    padding: .5em 5vw;
-  }
-}
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
-  .workspace .scale-list .elem-image {
-    max-width: 100%;
-    padding: 0 10em;
+  .elem-image {
+    padding: .5em 5rem;
   }
 }
