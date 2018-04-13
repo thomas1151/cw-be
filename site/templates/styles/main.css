@@ -388,6 +388,10 @@ body {
   color: #f1f1f1;
   letter-spacing: -0.04em;
   font-weight: 600;
+  transition: .1s all;
+}
+.control-group button:hover {
+  background: #0c85d0;
 }
 .right-controls {
   text-align: right;
@@ -403,6 +407,7 @@ body {
   letter-spacing: -0.03em;
   font-size: 120%;
   color: #f1f1f1;
+  list-style-type: none;
 }
 .active-topic:before {
   font-style: italic;
@@ -425,7 +430,7 @@ button {
   border: 0;
   padding: .5em;
   margin: .1em;
-  border-radius: 2em;
+  border-radius: 1em;
 }
 .positive {
   background: lightgreen;
@@ -436,23 +441,30 @@ button {
 .row {
   margin: 0 !important;
 }
-.col-xs-10 {
+[class*="col-xs-"] {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 .menu-overlay {
   background: #343f52;
   height: 100%;
+  display: none;
+  visibility: hidden;
 }
 .menu-overlay ul {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 .menu-overlay .item {
   color: white;
   padding: 1em;
   margin: .5em 0;
   background: rgba(50, 50, 50, 0.4);
+}
+.visible {
+  display: inherit;
+  visibility: visible;
 }
 .view-wrapper {
   display: flex;
@@ -465,8 +477,7 @@ li.gu-mirror {
   margin: .5em;
   border: 1px solid #f2f2f2;
   border-radius: .5em;
-  color: #343f52;
   background: #f1f1f1;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-  color: white;
+  color: #343f52;
 }

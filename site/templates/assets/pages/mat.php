@@ -2,7 +2,7 @@
 <div class="ui-wrapper">
     <div class="ui-wrapper-inner row">
         
-        <div class="menu-overlay col-xs-2">
+        <div class="menu-overlay col-xs-2" id="menu-overlay">
             <ul class="column menu scale-list">
                 <li class="item col-xs draggable">Holiday</li>
                 <li class="item col-xs draggable">Holiday1</li>
@@ -11,40 +11,11 @@
                 <li class="item col-xs draggable">Holiday4</li>
             </ul>
         </div>
-        <div class="view-wrapper  col-xs-10">
+        <div class="view-wrapper  col-xs-12">
             <div class="workspace">
                 <div class="scale row">
 
-                    <div class="scale-group col-xs">
-                        <div class="scale-header">
-                            <div class="scale-value col-xs">1</div>
-                        </div>
-                        <div class="scale-list col-xs"></div>
-                        <!-- //$( "div" ).data( "scale-value-id" ) === "1"; -->
-                    </div>
 
-                    <div class="scale-group col-xs">
-                        <div class="scale-header">
-                            <div class="scale-value col-xs">2</div>
-                        </div>
-                        <div id="list-2" class="scale-list col-xs"></div>
-                    </div>
-
-
-                    <div class="scale-group col-xs">
-                        <div class="scale-header">
-                            <div class="scale-value col-xs">3</div>
-                        </div>
-                        <div class="scale-list col-xs"></div>
-                    </div>
-
-
-                    <div class="scale-group col-xs">
-                        <div class="scale-header">
-                            <div class="scale-value col-xs">4</div>
-                        </div>
-                        <div class="scale-list col-xs"></div>
-                    </div>
                 </div>
 
             </div>
@@ -53,7 +24,7 @@
                 <div class="row center-xs">
                     <div class="left-controls control-group col-xs-4">
                         <div class="row">
-                            <button class="menu col-xs-3">Show Menu</button>
+                            <button class="menu col-xs-3" id="menu-toggle">Show Menu</button>
                             <div class="last-topic col-xs" id="last-topic">Last Topic: <span>Not</span></div>
 
                         </div>
@@ -76,3 +47,4 @@
         </div>
     </div>
 </div>
+

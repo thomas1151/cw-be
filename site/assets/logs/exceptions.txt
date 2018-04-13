@@ -1,0 +1,4 @@
+2018-04-13 11:05:09	admin	http://localhost/mats/api/elements/	Unknown Selector operator: '' -- was your selector value properly escaped?  (in /wire/core/Selectors.php line 378)
+2018-04-13 11:05:10	admin	http://localhost/mats/api/elements/	Unknown Selector operator: '' -- was your selector value properly escaped?  (in /wire/core/Selectors.php line 378)
+2018-04-13 11:05:19	admin	http://localhost/mats/api/elements/	Unknown Selector operator: '' -- was your selector value properly escaped?  (in /wire/core/Selectors.php line 378)
+2018-04-13 11:05:20	admin	http://localhost/mats/api/elements/	Unknown Selector operator: '' -- was your selector value properly escaped?  (in /wire/core/Selectors.php line 378)

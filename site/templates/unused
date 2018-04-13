@@ -48,3 +48,38 @@
 		?>
 		</p>
 	</footer>
+
+
+
+	                    <div class="scale-group col-xs">
+                        <div class="scale-header">
+                            <div class="scale-value col-xs">1</div>
+                        </div>
+                        <div class="scale-list col-xs"></div>
+                        <!-- //$( "div" ).data( "scale-value-id" ) === "1"; -->
+                    </div>
+
+                    <div class="scale-group col-xs">
+                        <div class="scale-header">
+                            <div class="scale-value col-xs">2</div>
+                        </div>
+                        <div id="list-2" class="scale-list col-xs"></div>
+                    </div>
+
+
+                    <div class="scale-group col-xs">
+                        <div class="scale-header">
+                            <div class="scale-value col-xs">3</div>
+                        </div>
+                        <div class="scale-list col-xs"></div>
+                    </div>
+
+
+                    <div class="scale-group col-xs">
+                        <div class="scale-header">
+                            <div class="scale-value col-xs">4</div>
+                        </div>
+                        <div class="scale-list col-xs"></div>
+                    </div>
+
+					

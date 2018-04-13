@@ -34,18 +34,20 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="mobile-web-app-capable" content="yes">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<title><?php echo $title; ?></title>
 	<meta name="description" content="<?php echo $page->summary; ?>" />
 
 
 
 	<link href='//fonts.googleapis.com/css?family=Lusitana:400,700|Quattrocento:400,700' rel='stylesheet' type='text/css' />
-	
+
+
 
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/main.css" />
+	<script>var site_root_url = "<?= $pages->get(1)->httpUrl;?>";</script>
 
 </head>
 <body>
