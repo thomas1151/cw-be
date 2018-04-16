@@ -47,7 +47,7 @@
 
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/main.css" />
-	<script>var site_root_url = "<?= $pages->get(1)->httpUrl;?>";</script>
+	<script>var site_root_url = "<?php echo $pages->get(1)->httpUrl;?>";</script>
 
 </head>
 <body>
