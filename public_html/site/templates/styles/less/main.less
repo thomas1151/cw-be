@@ -102,8 +102,8 @@ body{
 }
 .control-group{
     text-align: center;
-    row{
-    }
+    // row{
+    // }
     button{
         background: @main-active;
         color: @main-light;
@@ -229,6 +229,113 @@ i.fa{
 .mobile-hidden{
     display: none;
 }
+.no-display{
+    display: none;
+}
+#modal{
+  // pointer-events: none;
+  transition: .2s all ease-in;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;  
+
+   z-index: 5;
+
+
+
+}
+.visible{
+  visibility: visible;
+  opacity: 1;
+}
+.hidden{
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+
+.focused-element{
+  z-index: 25;
+  position: relative;
+}
+.modal-card{
+    font-weight: 600;
+    color: #333;
+    letter-spacing: -0.025em;
+
+
+   background: #f6f6f6;
+   padding: .75em 1em 1em 1em;
+   border-radius: .5em;
+   min-width: 30%;
+   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+.modal-content{
+    background: rgba(0, 0, 0,0.4);
+    height: 100%;
+    width: 100%;
+}
+.modal-content-wrapper{
+  // pointer-events: none;
+    .card-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: none;
+    }
+}
+.form-elements{
+  visibility: hidden;
+  display: none;
+}
+.modal-form{
+  padding: 1.5em;
+  input{
+    padding: .5em;
+    font-size: 1em; 
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .form-body{
+    min-width: 33.5em;
+    padding: 1.5em;
+
+  }
+  .window-control{
+    .row{
+      padding: 0;
+    }
+    h2,button{
+      display: inline-block;
+      margin: 0;
+      text-align: center;
+    }
+    text-align: right;
+    button{
+      width: 10%;
+      align-self: flex-end;
+    }
+  }
+  button{
+    width: 100%;
+    display: inline-block;
+    border: 0;
+    // margin: 1.5em 0 0 0;
+    padding: .5em;
+    color:   white;
+    border-radius: 1.5em;
+    background: mediumspringgreen;
+    margin: 1em 0;
+  }
+}
+
+
+
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
@@ -243,10 +350,9 @@ i.fa{
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (min-width : 480px) {
-        .elem-image{
-            // padding: 0em 1em .5em 1em;
-
-        }
+        // .elem-image{
+        //     // padding: 0em 1em .5em 1em;
+        // }
         .workspace .scale-list .elem-image{
             max-width: 100%;
             // padding: 0 2em;
@@ -276,9 +382,9 @@ i.fa{
         .elem-image{
                 padding: .5em 5rem;
         }
-        .workspace .scale-list .elem-image{
-            // padding: 0 11em;
-        }
+        // .workspace .scale-list .elem-image{
+        //     // padding: 0 11em;
+        // }
     }
 
 

@@ -1,5 +1,13 @@
 
 <div class="ui-wrapper">
+    <div class="new-order-form modal hidden" id="modal">
+        <div class="modal-content card-wrapper">
+        </div>
+    </div>
+    <div class="modal-content-wrapper hidden" id="modal">
+        <div class="card-wrapper">
+        </div>
+    </div>
     <div class="ui-wrapper-inner row">
         
         <div class="menu-overlay col-xs-2" id="menu-overlay">
