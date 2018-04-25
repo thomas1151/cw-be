@@ -100,10 +100,11 @@ function BlankElement(){
         this.modal_item.elem = $(`
         <div class="modal-card focused-element" tabindex="0">
             Create Blank Element
-            <form>
+            <button class="quit-modal">X</button>
+            <form class="modal-form">
                 <label for="blank-element" tabindex="0">Element Text</label>
-                <button class="sub-button" tabindex=”0″>Submit</button>
                 <input type="text" name="blank-element"/>
+                <button class="sub-button" type="button" tabindex="0" >Submit</button>
             </form>
         </div>
         `);
@@ -128,7 +129,7 @@ function BlankElement(){
     }
     this.clickLogic = function(){
         this.editForm();
-        this.toggleModal();
+        // this.toggleModal();
         this.modal_item.elem.parents('.modal-content-wrapper').removeClass('hidden');
         this.modal_item.elem.parents('.modal-content-wrapper').addClass('visible');
 
@@ -305,39 +306,31 @@ $.ajax(site_root_url + 'api/scales')
 
 $(document).ready(function () {
 
-    // //Create focus effect
-    // $("body").on("focusin", ".modal-card", function () {
-    //     var el = $(this);
-    //     console.log(el);
-    //     var modal = document.getElementById("modal");
+    $('.modal-content-wrapper').click(function (e) {
+        console.log("outer click");
+        console.log(e.target);
+        if ($(e.target).is('.modal-content')) {
+            var el = $(this);
+            console.log("Model clicked")
+            console.log(el)
+            var modal = document.getElementById("modal");
+            // if (modal.classList.contains('visible')) {
+            //     modal.classList.remove('visible');
+            // } else {
+            //     modal.classList.add('hidden');
+            // }
+
+            el.removeClass('visible');
+            el.addClass('hidden');
+            el.find('.modal-card').remove();
+        }
+    });
 
 
-    //     this.scrollIntoView();
 
-    //     if (modal.classList.contains('hidden')) {
-    //         modal.classList.remove('hidden');
-    //     } else {
-    //         modal.classList.add('visible');
-    //     }
+    // $("body").on("click", ".modal-content-wrapper", function () {
 
     // });
-
-    $("body").on("focusout", ".modal-card", function () {
-        var el = $(this);
-
-        var modal = document.getElementById("modal");
-        // if (modal.classList.contains('visible')) {
-        //     modal.classList.remove('visible');
-        // } else {
-        //     modal.classList.add('hidden');
-        // }
-        modal.classList.remove('visible');
-        modal.classList.add('hidden');
-
-        $(this).parents('.modal-content-wrapper').removeClass('visible');
-        $(this).parents('.modal-content-wrapper').addClass('hidden');
-        this.remove();
-    });
 
     
 

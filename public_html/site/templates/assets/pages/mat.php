@@ -1,11 +1,9 @@
 
 <div class="ui-wrapper">
-    <div class="new-order-form modal hidden" id="modal">
-        <div class="modal-content card-wrapper">
-        </div>
+    <div class="modal hidden" id="modal">
     </div>
     <div class="modal-content-wrapper hidden" id="modal">
-        <div class="card-wrapper">
+        <div class="modal-content card-wrapper">
         </div>
     </div>
     <div class="ui-wrapper-inner row">
