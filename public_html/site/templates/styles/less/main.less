@@ -50,7 +50,7 @@ body{
 
     .scale-list{
     width: 100%;
-
+    overflow: auto;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -263,6 +263,19 @@ i.fa{
   position: relative;
 }
 .modal-card{
+    .card-header{
+        display: flex;
+        h2{
+            flex: 1;
+            font-size: 110%;
+        }
+    }
+    .quit-modal{
+        background: red;
+        width: 2.1em;
+        height: 2.1em;
+        color: white;
+    }
     font-weight: 600;
     color: #333;
     letter-spacing: -0.025em;

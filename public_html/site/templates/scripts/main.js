@@ -1,3 +1,12 @@
+function objectifyForm(formArray) {//serialize data function
+
+    var returnArray = {};
+    for (var i = 0; i < formArray.length; i++) {
+        returnArray[formArray[i]['name']] = formArray[i]['value'];
+    }
+    return returnArray;
+}
+
 function ModalElement(){
     this.elem = $(`
         <div tabindex="0" class="modal-card focused-element">
@@ -9,6 +18,16 @@ function ModalElement(){
     this.renderThis = function(){
         //.focused-element
         this.elem.appendTo('.modal-content-wrapper .card-wrapper');
+        this.elem.data("element", this);
+
+    }
+    this.remove = function () {
+        var el = $(this).parents(".modal-content");
+        console.log("Model clicked");
+        var modal_wrapper = $(".modal-content-wrapper");
+        modal_wrapper.removeClass('visible');
+        modal_wrapper.addClass('hidden');
+        modal_wrapper.find('.modal-card').remove();
 
     }
 }
@@ -91,19 +110,23 @@ function Element(text,image,id,type="existing"){
 
     }
 
+
 }
 function BlankElement(){
     Element.call(this, "Blank", "", "-1",type="blank");
+    // this.elem.data("element", this);
     this.editForm = function () {
         this.modal_item = new ModalElement();
 
         this.modal_item.elem = $(`
         <div class="modal-card focused-element" tabindex="0">
-            Create Blank Element
-            <button class="quit-modal">X</button>
+            <div class="card-header">
+                <h2>Create Blank Element</h2>
+                <button class="quit-modal">X</button>
+            </div>
             <form class="modal-form">
-                <label for="blank-element" tabindex="0">Element Text</label>
-                <input type="text" name="blank-element"/>
+                <label for="element-text" tabindex="0">Element Text</label>
+                <input type="text" name="element-text"/>
                 <button class="sub-button" type="button" tabindex="0" >Submit</button>
             </form>
         </div>
@@ -113,20 +136,7 @@ function BlankElement(){
     }
     this.submitButton = function(){
     }
-    this.toggleModal = function(){
-        if (this.modal.hasClass("hidden")) {
 
-            this.modal.removeClass("hidden");
-            this.modal.removeClass("no-display");
-            this.modal.addClass("visible");
-
-        } else {
-            this.modal.removeClass("visible");
-            this.modal.addClass("hidden");
-            this.modal.addClass("no-display");
-        }
-
-    }
     this.clickLogic = function(){
         this.editForm();
         // this.toggleModal();
@@ -135,29 +145,6 @@ function BlankElement(){
 
         console.log("BlankElement Clicked")
     }
-
-    $(this).on("click", ".sub-button", function () {
-        d = $(this).find("form").serializeArray();
-        console.log(d);
-    });
-
-    $(this.modal_item_el).on("focusout", function () {
-        var el = $(this);
-
-        var modal = document.getElementById("modal");
-        // if (modal.classList.contains('visible')) {
-        //     modal.classList.remove('visible');
-        // } else {
-        //     modal.classList.add('hidden');
-        // }
-        modal.classList.remove('visible');
-        modal.classList.add('hidden');
-
-        $(this).parents('.modal-content-wrapper').removeClass('visible');
-        $(this).parents('.modal-content-wrapper').addClass('hidden');
-        this.remove();
-    });
-
 
 }
 var last_topic_container = document.querySelector("#last-topic span");
@@ -284,25 +271,6 @@ $.ajax(site_root_url + 'api/scales')
         //console.log(data);
     });
 
-// $("body").on("focusout", ".modal-card", function () {
-//     var el = $(this);
-//     var modal = $("#modal");
-//     // if (modal.hasClass('visible')) {
-//     //     modal.removeClass('visible');
-//     //     modal.removeClass('no-display');
-        
-//     // } else {
-//     //     modal.addClass('hidden');
-//     //     modal.addClass('no-display');
-//     // }
-//     // //el.removeClass('focused-element');
-//     modal.addClass('hidden');
-//     modal.addClass('no-display');
-//     el.remove();
-
-// });
-
-
 
 $(document).ready(function () {
 
@@ -312,33 +280,41 @@ $(document).ready(function () {
         if ($(e.target).is('.modal-content')) {
             var el = $(this);
             console.log("Model clicked")
-            console.log(el)
             var modal = document.getElementById("modal");
-            // if (modal.classList.contains('visible')) {
-            //     modal.classList.remove('visible');
-            // } else {
-            //     modal.classList.add('hidden');
-            // }
-
             el.removeClass('visible');
             el.addClass('hidden');
             el.find('.modal-card').remove();
         }
     });
-
-
-
-    // $("body").on("click", ".modal-content-wrapper", function () {
-
-    // });
-
-    
-
-
 });
 
 sys.existingElements.push(new BlankElement())
 sys.existingElements[sys.existingElements.length - 1].renderThis();
+
+
+
+$("body").on("click", ".modal-card .sub-button", function (e) {
+    console.log("CLICKED");
+    d = $(this).find("form").serializeArray();
+    console.log(d);
+    a_d = objectifyForm($(this.closest('.modal-card')).data('element').elem.find("form").serializeArray());
+    console.log(a_d);
+    console.log($(this.closest('.modal-card')).data('element').elem.find("form").serializeArray());
+
+    sys.existingElements[-1] = new Element(a_d['element-text'], "", 0);
+    sys.existingElements[-1].renderThis(); 
+    
+    el = $(this).parents(".modal-card");   
+    el.data("element").remove();
+
+
+});
+
+$("body").on("click", ".modal-card .quit-modal", function (e) {
+        var el = $(this).parents(".modal-card");
+        el.data("element").remove();
+
+});
 
 
 $("body").on("click", ".item.blank", function () {

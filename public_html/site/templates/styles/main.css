@@ -2683,6 +2683,7 @@ body {
 }
 .scale .scale-list {
   width: 100%;
+  overflow: auto;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -2877,6 +2878,19 @@ i.fa {
   border-radius: .5em;
   min-width: 30%;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+.modal-card .card-header {
+  display: flex;
+}
+.modal-card .card-header h2 {
+  flex: 1;
+  font-size: 110%;
+}
+.modal-card .quit-modal {
+  background: red;
+  width: 2.1em;
+  height: 2.1em;
+  color: white;
 }
 .modal-content {
   background: rgba(0, 0, 0, 0.4);
