@@ -1,0 +1,24 @@
+{
+  "name": "mats",
+  "version": "1.0.0",
+  "description": "Accessible Communication Software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "i": "^0.3.6",
+    "npm": "^6.0.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "babelify": "^8.0.0"
+  }
+}

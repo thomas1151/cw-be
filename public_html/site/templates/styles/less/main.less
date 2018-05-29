@@ -1,8 +1,8 @@
 // out: ../main.css
 @import "normalise.less";
-@import "colors.less";
-@import "dragula.min.css";
 @import "fa/font-awesome.less";
+@import "dragula.min.css";
+@import "colors.less";
 
 html, body, main {
     width: 100%;
@@ -98,7 +98,11 @@ body{
 .controls{
     background: @sub-dark;
     padding: 1em;
-
+    label{
+        color: hsla(0,0%,95%,.86);
+        display: block;
+        margin: .5em 0 0 0;
+    }
 }
 .control-group{
     text-align: center;
@@ -135,9 +139,13 @@ body{
         color: @sub-light;
         font-size: 90%;
         font-weight: 300;
-        content: "Current Topic: "
+        // content: "Current Topic: "
     }
     list-style-type: none;
+    box-shadow: 0 4px 6px 0 hsla(0,0%,0%,0.2);
+    background: rgba(250,250,250,.8);
+    color: darkslategrey;
+    border-radius: .5em;
 }
 .last-topic{
     text-align: center;
@@ -207,6 +215,12 @@ button{
     height: 100%;
 
 }
+.item{
+    i.fa{
+        display: inline;
+        padding: .5em;
+    }
+}
 li.gu-mirror{
     .scale .scale-list .item;
     color: @main-dark;
@@ -263,6 +277,9 @@ i.fa{
   position: relative;
 }
 .modal-card{
+    label{
+        font-weight: 300;
+    }
     .card-header{
         display: flex;
         h2{
@@ -280,12 +297,12 @@ i.fa{
     color: #333;
     letter-spacing: -0.025em;
 
-
-   background: #f6f6f6;
-   padding: .75em 1em 1em 1em;
-   border-radius: .5em;
-   min-width: 30%;
-   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    background: #ffffff;
+    padding: .75em 1em .75em 1em;
+    border-radius: .5em;
+    min-width: 30%;
+    box-shadow: 0 2px 6px 0;
+    border-top: .3em solid dodgerblue;
 }
 .modal-content{
     background: rgba(0, 0, 0,0.4);
@@ -305,19 +322,67 @@ i.fa{
   visibility: hidden;
   display: none;
 }
+
 .modal-form{
-  padding: 1.5em;
   input{
     padding: .5em;
     font-size: 1em; 
     width: 100%;
     box-sizing: border-box;
   }
+  .form-element{
+    padding: .5em 0;
+  }
   .form-body{
     min-width: 33.5em;
     padding: 1.5em;
 
   }
+  .custom-checkbox {
+    width: 1.5em;
+    position: relative;
+  }
+  .custom-checkbox  label {
+    cursor: pointer;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background: #eee;
+    border:1px solid #ddd;
+    }
+  .custom-checkbox label:after {
+    opacity: 0.2;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 6px;
+    left: 7px;
+    border: 3px solid #333;
+    border-top: none;
+    border-right: none;
+
+    transform: rotate(-45deg);
+  }
+
+
+    /**
+    * Create the hover event of the tick
+    */
+    .custom-checkbox label:hover::after {
+        opacity: 0.5;
+    }
+
+    /**
+    * Create the checkbox state for the tick
+    */
+    .custom-checkbox input[type=checkbox]:checked + label:after {
+        opacity: 1;
+    }
+
   .window-control{
     .row{
       padding: 0;

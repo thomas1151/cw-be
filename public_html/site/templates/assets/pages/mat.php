@@ -1,4 +1,8 @@
+<script src="https://unpkg.com/react@16.3.2/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@16.3.2/umd/react-dom.production.min.js">
+<script src="<?php echo $config->urls->templates?>scripts/reactComponents.js"></script>
 
+<script src=""></script>
 <div class="ui-wrapper">
     <div class="modal hidden" id="modal">
     </div>
@@ -6,7 +10,7 @@
         <div class="modal-content card-wrapper">
         </div>
     </div>
-    <div class="ui-wrapper-inner row">
+    <div class="ui-wrapper-inner row" id="ui-wrapper-inner">
         
         <div class="menu-overlay col-xs-2" id="menu-overlay">
             <ul class="column menu scale-list">
@@ -33,7 +37,9 @@
                     </div>
 
                     <div class="center-controls control-group  col-xs-4">
+
                         <div class="active-topic col-xs" id="active-topic">Blank Mat</div>
+                        <label class="ui-label col-xs" for="active-topic" id="active-topic-label">Current Topic</label>
                     </div>
 
                     <div class="right-controls  control-group col-xs-4">

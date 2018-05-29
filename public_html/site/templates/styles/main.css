@@ -2726,6 +2726,11 @@ body {
   background: #6f7d95;
   padding: 1em;
 }
+.controls label {
+  color: rgba(242, 242, 242, 0.86);
+  display: block;
+  margin: .5em 0 0 0;
+}
 .control-group {
   text-align: center;
 }
@@ -2754,13 +2759,16 @@ body {
   font-size: 120%;
   color: #f1f1f1;
   list-style-type: none;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  background: rgba(250, 250, 250, 0.8);
+  color: darkslategrey;
+  border-radius: .5em;
 }
 .active-topic:before {
   font-style: italic;
   color: #ececec;
   font-size: 90%;
   font-weight: 300;
-  content: "Current Topic: ";
 }
 .last-topic {
   text-align: center;
@@ -2816,6 +2824,10 @@ button {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+.item i.fa {
+  display: inline;
+  padding: .5em;
 }
 li.gu-mirror {
   flex-grow: 0;
@@ -2873,11 +2885,15 @@ i.fa {
   font-weight: 600;
   color: #333;
   letter-spacing: -0.025em;
-  background: #f6f6f6;
-  padding: .75em 1em 1em 1em;
+  background: #ffffff;
+  padding: .75em 1em .75em 1em;
   border-radius: .5em;
   min-width: 30%;
-  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 2px 6px 0;
+  border-top: .3em solid dodgerblue;
+}
+.modal-card label {
+  font-weight: 300;
 }
 .modal-card .card-header {
   display: flex;
@@ -2908,7 +2924,12 @@ i.fa {
   display: none;
 }
 .modal-form {
-  padding: 1.5em;
+  /**
+    * Create the hover event of the tick
+    */
+  /**
+    * Create the checkbox state for the tick
+    */
 }
 .modal-form input {
   padding: .5em;
@@ -2916,9 +2937,46 @@ i.fa {
   width: 100%;
   box-sizing: border-box;
 }
+.modal-form .form-element {
+  padding: .5em 0;
+}
 .modal-form .form-body {
   min-width: 33.5em;
   padding: 1.5em;
+}
+.modal-form .custom-checkbox {
+  width: 1.5em;
+  position: relative;
+}
+.modal-form .custom-checkbox label {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 0;
+  background: #eee;
+  border: 1px solid #ddd;
+}
+.modal-form .custom-checkbox label:after {
+  opacity: 0.2;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 6px;
+  left: 7px;
+  border: 3px solid #333;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+}
+.modal-form .custom-checkbox label:hover::after {
+  opacity: 0.5;
+}
+.modal-form .custom-checkbox input[type=checkbox]:checked + label:after {
+  opacity: 1;
 }
 .modal-form .window-control {
   text-align: right;

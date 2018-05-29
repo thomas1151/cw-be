@@ -1,4 +1,6 @@
-function objectifyForm(formArray) {//serialize data function
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+function objectifyForm(formArray) {
+    //serialize data function
 
     var returnArray = {};
     for (var i = 0; i < formArray.length; i++) {
@@ -7,7 +9,7 @@ function objectifyForm(formArray) {//serialize data function
     return returnArray;
 }
 
-function ModalElement(){
+function ModalElement() {
     this.elem = $(`
         <div tabindex="0" class="modal-card focused-element">
             Sample Modal Element
@@ -15,12 +17,11 @@ function ModalElement(){
             </form>
         </div>
         `);
-    this.renderThis = function(){
+    this.renderThis = function () {
         //.focused-element
         this.elem.appendTo('.modal-content-wrapper .card-wrapper');
         this.elem.data("element", this);
-
-    }
+    };
     this.remove = function () {
         var el = $(this).parents(".modal-content");
         console.log("Model clicked");
@@ -28,41 +29,31 @@ function ModalElement(){
         modal_wrapper.removeClass('visible');
         modal_wrapper.addClass('hidden');
         modal_wrapper.find('.modal-card').remove();
-
-    }
+    };
 }
 
-function System(){
+function System() {
     this.currentTopic = "";
     this.previousTopic = "";
     this.existingElements = [];
 
-    this.logDecision = function(){
-
-    }
-    this.getScale    = function(){
-
-    }
-    this.getElements = function(){
-
-    }
-
+    this.logDecision = function () {};
+    this.getScale = function () {};
+    this.getElements = function () {};
 }
-function Category(){
-
-}
-function Scale(){
+function Category() {}
+function Scale() {
     this.elements = [];
 }
-function ScaleGroup(text, string_indentifier = ""){
+function ScaleGroup(text, string_indentifier = "") {
     this.text = text;
     this.string_indentifier = string_indentifier;
     this.scaleElements = [];
 }
-function ScaleElement(text,string_indentifier = ""){
+function ScaleElement(text, string_indentifier = "") {
     this.text = text;
     this.string_indentifier = string_indentifier;
-    this.renderThis = function(target=".workspace .scale"){
+    this.renderThis = function (target = ".workspace .scale") {
         elem = $(`
         <div class="scale-group col-xs">
             <div class="scale-header">
@@ -73,47 +64,39 @@ function ScaleElement(text,string_indentifier = ""){
 
         $('<div />', {
             "class": 'scale-value col-xs',
-            text: this.text,
+            text: this.text
         }).appendTo(elem.find(".scale-header"));
         elem.appendTo(target);
-    }
+    };
 }
-function Element(text,image,id,type="existing"){
+function Element(text, image, id, type = "existing") {
     this.text = text;
     this.image = image;
-    this.id    = id;
-    this.type  = type;
+    this.id = id;
+    this.type = type;
     this.modal = $("#modal");
 
-    this.renderThis = function(target="#menu-overlay .scale-list"){
+    this.renderThis = function (target = "#menu-overlay .scale-list") {
         this.elem = $('<li />', {
-            "class": 'item col-xs draggable '+this.type,
-
+            "class": 'item col-xs draggable ' + this.type
 
         }).html(this.text);
         console.log(this);
-        if(this.image){
-            $('<img />',{
-                "class":"elem-image",
-                "src":this.image,
-            }).prependTo(this.elem)
+        if (this.image) {
+            $('<img />', {
+                "class": "elem-image",
+                "src": this.image
+            }).prependTo(this.elem);
         }
         this.elem.appendTo(target);
         this.elem.data("element", this);
+    };
 
-    }
-
-    this.clickLogic = function(){
-
-    }
-    this.editForm  = function(){
-
-    }
-
-
+    this.clickLogic = function () {};
+    this.editForm = function () {};
 }
-function BlankElement(){
-    Element.call(this, "<i class='fa fa-plus'></i>Blank", "", "-1",type="blank");
+function BlankElement() {
+    Element.call(this, "<i class='fa fa-plus'></i>Blank", "", "-1", type = "blank");
     // this.elem.data("element", this);
     this.editForm = function () {
         this.modal_item = new ModalElement();
@@ -141,20 +124,17 @@ function BlankElement(){
         </div>
         `);
         this.modal_item.renderThis();
-        
-    }
-    this.submitButton = function(){
-    }
+    };
+    this.submitButton = function () {};
 
-    this.clickLogic = function(){
+    this.clickLogic = function () {
         this.editForm();
         // this.toggleModal();
         this.modal_item.elem.parents('.modal-content-wrapper').removeClass('hidden');
         this.modal_item.elem.parents('.modal-content-wrapper').addClass('visible');
 
-        console.log("BlankElement Clicked")
-    }
-
+        console.log("BlankElement Clicked");
+    };
 }
 var last_topic_container = document.querySelector("#last-topic span");
 var last_topic = document.querySelector("#active-topic");
@@ -162,40 +142,33 @@ var drake = dragula({
     isContainer: function (el) {
         return el.classList.contains('scale-list');
     },
-    revertOnSpill: true,
+    revertOnSpill: true
 
 });
 drake.containers.push(document.querySelector("#active-topic"));
-drake.on("drop", function(el, target, source, sibling){
-        if(target.classList.contains('active-topic')){
-            last_topic_container.innerText = $(target).contents().filter(function () {
-                return this.nodeType == 3;
-            })[0].nodeValue 
+drake.on("drop", function (el, target, source, sibling) {
+    if (target.classList.contains('active-topic')) {
+        last_topic_container.innerText = $(target).contents().filter(function () {
+            return this.nodeType == 3;
+        })[0].nodeValue;
 
-
-            console.log(target);
-            //  = last_topic.innerText;
-            target.innerText = el.innerText;
-            source.append(el);
-            console.log(target);
-        }
-    
-})
-window.addEventListener('touchmove', function () { })
-var qs = (function (a) {
+        console.log(target);
+        //  = last_topic.innerText;
+        target.innerText = el.innerText;
+        source.append(el);
+        console.log(target);
+    }
+});
+window.addEventListener('touchmove', function () {});
+var qs = function (a) {
     if (a == "") return {};
     var b = {};
     for (var i = 0; i < a.length; ++i) {
         var p = a[i].split('=', 2);
-        if (p.length == 1)
-            b[p[0]] = "";
-        else
-            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+        if (p.length == 1) b[p[0]] = "";else b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
     }
     return b;
-})(window.location.search.substr(1).split('&'));
-
-
+}(window.location.search.substr(1).split('&'));
 
 var theToggle = document.getElementById('menu-toggle');
 var menuOverlay = document.getElementById('menu-overlay');
@@ -218,68 +191,56 @@ theToggle.onclick = function () {
         viewWrapper.classList.add("col-xs-10");
     }
     return false;
-}
+};
 
 var scale = new Scale();
-var sys   = new System();
+var sys = new System();
 
-$.ajax(site_root_url+'api/elements')
-    .done(function (data) {
+$.ajax(site_root_url + 'api/elements').done(function (data) {
 
-        json_data = JSON.parse(data);
-        //console.log(json_data);
-        for (i = 0; i < json_data.length; i++) {
-            sys.existingElements.push(
-                new Element(json_data[i].title, json_data[i].image, json_data[i].id)
-            );
-            sys.existingElements[sys.existingElements.length - 1].renderThis();       
+    json_data = JSON.parse(data);
+    //console.log(json_data);
+    for (i = 0; i < json_data.length; i++) {
+        sys.existingElements.push(new Element(json_data[i].title, json_data[i].image, json_data[i].id));
+        sys.existingElements[sys.existingElements.length - 1].renderThis();
+    }
+}).fail(function (data) {
+    console.log(data);
+}).always(function (data) {
+    // console.log(data);
+});
+
+$.ajax(site_root_url + 'api/scales').done(function (data) {
+
+    json_data = JSON.parse(data);
+    console.log(json_data);
+    for (i = 0; i < json_data.length; i++) {
+        scale.elements.push(new ScaleGroup(json_data[i].title, json_data[i].string_identifier));
+        scale.elements[scale.elements.length - 1].children = json_data[i].children_min;
+        for (j = 0; j < scale.elements[scale.elements.length - 1].children.length; j++) {
+            scale.elements[i].scaleElements.push(new ScaleElement(scale.elements[i].children[j][0], json_data[i].string_identifier));
         }
-
-    })
-    .fail(function (data) {
-        console.log(data);
-    })
-    .always(function (data) {
-        // console.log(data);
-    });
-
-$.ajax(site_root_url + 'api/scales')
-    .done(function (data) {
-
-        json_data = JSON.parse(data);
-        console.log(json_data);
-        for (i = 0; i < json_data.length; i++) {
-            scale.elements.push(
-                new ScaleGroup(json_data[i].title, json_data[i].string_identifier)
-            );
-            scale.elements[scale.elements.length - 1].children = json_data[i].children_min;
-            for (j = 0; j < scale.elements[scale.elements.length - 1].children.length; j++) {
-                scale.elements[i].scaleElements.push(new ScaleElement(scale.elements[i].children[j][0], json_data[i].string_identifier  ));
+    }
+    console.log(scale);
+    scaleType = "linear1to3";
+    if (qs['scaleType']) {
+        scaleType = qs['scaleType'];
+    }
+    for (i = 0; i <= scale.elements.length - 1; i++) {
+        if (scale.elements[i].string_indentifier == scaleType) {
+            for (j = 0; j < scale.elements[i].scaleElements.length; j++) {
+                scale.elements[i].scaleElements[j].renderThis();
             }
-        }
-        console.log(scale);
-        scaleType = "linear1to3";
-        if (qs['scaleType']){
-            scaleType = qs['scaleType'];
-        }
-        for (i = 0; i <= scale.elements.length-1; i++){
-            if (scale.elements[i].string_indentifier == scaleType){
-                for (j = 0; j < scale.elements[i].scaleElements.length; j++){
-                    scale.elements[i].scaleElements[j].renderThis();
-                }
-                    
-                // scale.elements[i].renderThis();
-                // console.log(scale.elements[i])
-            }
-        }
-    })
-    .fail(function (data) {
-        console.log(data);
-    })
-    .always(function (data) {
-        //console.log(data);
-    });
 
+            // scale.elements[i].renderThis();
+            // console.log(scale.elements[i])
+        }
+    }
+}).fail(function (data) {
+    console.log(data);
+}).always(function (data) {
+    //console.log(data);
+});
 
 $(document).ready(function () {
 
@@ -288,7 +249,7 @@ $(document).ready(function () {
         console.log(e.target);
         if ($(e.target).is('.modal-content')) {
             var el = $(this);
-            console.log("Model clicked")
+            console.log("Model clicked");
             var modal = document.getElementById("modal");
             el.removeClass('visible');
             el.addClass('hidden');
@@ -297,10 +258,8 @@ $(document).ready(function () {
     });
 });
 
-sys.existingElements.push(new BlankElement())
+sys.existingElements.push(new BlankElement());
 sys.existingElements[sys.existingElements.length - 1].renderThis();
-
-
 
 $("body").on("click", ".modal-card .sub-button", function (e) {
     console.log("CLICKED");
@@ -311,30 +270,25 @@ $("body").on("click", ".modal-card .sub-button", function (e) {
     console.log($(this.closest('.modal-card')).data('element').elem.find("form").serializeArray());
 
     sys.existingElements[-1] = new Element(a_d['element-text'], "", 0);
-    sys.existingElements[-1].renderThis(); 
+    sys.existingElements[-1].renderThis();
 
-    el = $(this).parents(".modal-card");   
+    el = $(this).parents(".modal-card");
     el.data("element").remove();
-
-
 });
 
 $("body").on("click", ".modal-card .quit-modal", function (e) {
-        var el = $(this).parents(".modal-card");
-        el.data("element").remove();
-
+    var el = $(this).parents(".modal-card");
+    el.data("element").remove();
 });
-
 
 $("body").on("click", ".item.blank", function () {
     var el = $(this.closest("li"));
     var el_obj = el.data("element");
     console.log(el_obj);
     el_obj.clickLogic();
-
-
 });
-
 
 // a = new ModalElement()
 // a.renderThis();
+
+},{}]},{},[1]);

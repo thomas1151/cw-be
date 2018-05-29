@@ -92,3 +92,5 @@
 2018-04-16 19:41:41	?	http://localhost/?/	Error: 	Exception: SQLSTATE[HY000] [2002] Connection refused (in /opt/lampp/htdocs/mats/public_html/wire/core/ProcessWire.php line 377)
 2018-04-16 19:44:38	?	http://localhost/?/	Error: 	Exception: SQLSTATE[HY000] [2002] Connection refused (in /opt/lampp/htdocs/mats/public_html/wire/core/ProcessWire.php line 377)
 2018-04-16 19:44:38	?	http://localhost/?/	Error: 	Exception: SQLSTATE[HY000] [2002] Connection refused (in /opt/lampp/htdocs/mats/public_html/wire/core/ProcessWire.php line 377)
+2018-05-21 15:52:15	guest	http://localhost/mats/public_html/http404/	Compile Error: 	require(): Failed opening required 'assets/pages/.php' (include_path='.:/opt/lampp/lib/php') (line 57 of /opt/lampp/htdocs/mats/public_html/site/templates/_main.php)
+2018-05-21 15:52:16	guest	http://localhost/mats/public_html/http404/	Compile Error: 	require(): Failed opening required 'assets/pages/.php' (include_path='.:/opt/lampp/lib/php') (line 57 of /opt/lampp/htdocs/mats/public_html/site/templates/_main.php)
