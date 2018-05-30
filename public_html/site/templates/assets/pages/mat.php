@@ -1,6 +1,6 @@
-<script src="https://unpkg.com/react@16.3.2/umd/react.production.min.js"></script>
+<!-- <script src="https://unpkg.com/react@16.3.2/umd/react.production.min.js"></script>
 <script src="https://unpkg.com/react-dom@16.3.2/umd/react-dom.production.min.js">
-<script src="<?php echo $config->urls->templates?>scripts/reactComponents.js"></script>
+<script src="<?php echo $config->urls->templates?>scripts/reactComponents.js"></script> -->
 
 <script src=""></script>
 <div class="ui-wrapper">

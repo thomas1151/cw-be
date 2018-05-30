@@ -2800,6 +2800,7 @@ button {
   padding-right: 0 !important;
 }
 .menu-overlay {
+  overflow-y: auto;
   background: #343f52;
   height: 100%;
   display: none;
