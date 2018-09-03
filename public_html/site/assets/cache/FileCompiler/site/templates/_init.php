@@ -17,7 +17,10 @@
 
 // Variables for regions we will populate in _main.php. Here we also assign 
 // default values for each of them.
-$title = $page->get('headline|title'); // headline if available, otherwise title
+$title = $page->get('title|headline'); // headline if available, otherwise title
+if($page->get('headline')){
+    $title .= " | ".$page->get('headline');
+}
 $content = $page->body;
 $sidebar = $page->sidebar;
 

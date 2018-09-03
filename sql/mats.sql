@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 03, 2018 at 11:55 AM
+-- Generation Time: Sep 03, 2018 at 08:26 PM
 -- Server version: 10.1.10-MariaDB
 -- PHP Version: 5.5.33
 
@@ -70,15 +70,15 @@ INSERT INTO `caches` (`name`, `data`, `expires`) VALUES
 ('FileCompiler__447c263d396251f007a10f02ae15f67a', '{"source":{"file":"\\/opt\\/lampp\\/htdocs\\/mats\\/public_html\\/site\\/templates\\/basic-page.php","hash":"bd2f290478915d2ed8a355dad51d3c7f","size":594,"time":1523039149,"ns":"ProcessWire"},"target":{"file":"\\/opt\\/lampp\\/htdocs\\/mats\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/basic-page.php","hash":"bd2f290478915d2ed8a355dad51d3c7f","size":594,"time":1523039149}}', '2010-04-08 03:10:10'),
 ('FileCompiler__7ee5b609aab748bb91ef309e6dc7f6c0', '{"source":{"file":"\\/opt\\/lampp\\/htdocs\\/mats\\/public_html\\/site\\/templates\\/admin.php","hash":"9636f854995462a4cb877cb1204bc2fe","size":467,"time":1523039149,"ns":"ProcessWire"},"target":{"file":"\\/opt\\/lampp\\/htdocs\\/mats\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/admin.php","hash":"9636f854995462a4cb877cb1204bc2fe","size":467,"time":1523039149}}', '2010-04-08 03:10:10'),
 ('FileCompiler__ac52c76107aaf21640c2db4b596f9e2c', '{"source":{"file":"\\/opt\\/lampp\\/htdocs\\/mats\\/public_html\\/site\\/templates\\/api-get-scale.php","hash":"4c2979b00d0f169c605b1c023a547ee8","size":588,"time":1535476109,"ns":"ProcessWire"},"target":{"file":"\\/opt\\/lampp\\/htdocs\\/mats\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/api-get-scale.php","hash":"4c2979b00d0f169c605b1c023a547ee8","size":588,"time":1535476109}}', '2010-04-08 03:10:10'),
-('FileCompiler__f54eb30f4ce246cb1e3c37587ecd36f9', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/init.php","hash":"ddb509c7a0f45a28b2a842b0036699c2","size":599,"time":1535746033,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/init.php","hash":"ddb509c7a0f45a28b2a842b0036699c2","size":599,"time":1535746033}}', '2010-04-08 03:10:10'),
-('FileCompiler__4c8ff29c0603d5fc8755147bf4b44b35', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/ready.php","hash":"68890c45adc9546712273ee4b0872ae1","size":419,"time":1535746033,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/ready.php","hash":"68890c45adc9546712273ee4b0872ae1","size":419,"time":1535746033}}', '2010-04-08 03:10:10'),
-('FileCompiler__4ecf7240cd0e78014ba541da4e0eed4b', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/templates\\/_init.php","hash":"d39f6fdaf415d4873a5954796401085e","size":1337,"time":1535746033,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/_init.php","hash":"d39f6fdaf415d4873a5954796401085e","size":1337,"time":1535746033}}', '2010-04-08 03:10:10'),
-('FileCompiler__01b2ee67f1ce67f3589ef52ffbdd7d55', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/templates\\/_main.php","hash":"89b1a302e45014de5cde6c29f75f7830","size":2841,"time":1535906130,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/_main.php","hash":"89b1a302e45014de5cde6c29f75f7830","size":2841,"time":1535906130}}', '2010-04-08 03:10:10'),
-('FileCompiler__d367fb24d90abcc2c4ec46e6ee7eb5fc', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/templates\\/home.php","hash":"eca8f8649e5a9eb7e9f0bb67a91be44d","size":903,"time":1535746033,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/home.php","hash":"eca8f8649e5a9eb7e9f0bb67a91be44d","size":903,"time":1535746033}}', '2010-04-08 03:10:10'),
-('FileCompiler__34de5b66b5d9ded83f0cf7f93123b9dc', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/finished.php","hash":"0c817f0cebcbeb56007942a99504ca7b","size":329,"time":1535746033,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/finished.php","hash":"0c817f0cebcbeb56007942a99504ca7b","size":329,"time":1535746033}}', '2010-04-08 03:10:10'),
-('FileCompiler__62442dcd022e8e06ddf75cd9d645a637', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/templates\\/mat.php","hash":"38e3d9cda723dc6b663ffe25003335f5","size":334,"time":1535746033,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/mat.php","hash":"38e3d9cda723dc6b663ffe25003335f5","size":334,"time":1535746033}}', '2010-04-08 03:10:10'),
+('FileCompiler__f54eb30f4ce246cb1e3c37587ecd36f9', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/init.php","hash":"c8577def0694099f1f4c2b96c9661c44","size":585,"time":1535985091,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/init.php","hash":"c8577def0694099f1f4c2b96c9661c44","size":585,"time":1535985091}}', '2010-04-08 03:10:10'),
+('FileCompiler__4c8ff29c0603d5fc8755147bf4b44b35', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/ready.php","hash":"ff84b02b32ba2b25c8c3f6ee8c99fb53","size":409,"time":1535985091,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/ready.php","hash":"ff84b02b32ba2b25c8c3f6ee8c99fb53","size":409,"time":1535985091}}', '2010-04-08 03:10:10'),
+('FileCompiler__4ecf7240cd0e78014ba541da4e0eed4b', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/templates\\/_init.php","hash":"c11e69441c284c91005ebd0d1f959dd6","size":1371,"time":1535999092,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/_init.php","hash":"c11e69441c284c91005ebd0d1f959dd6","size":1371,"time":1535999092}}', '2010-04-08 03:10:10'),
+('FileCompiler__01b2ee67f1ce67f3589ef52ffbdd7d55', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/templates\\/_main.php","hash":"c131d04650cae836890168701c0066f7","size":2614,"time":1535987878,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/_main.php","hash":"c131d04650cae836890168701c0066f7","size":2614,"time":1535987878}}', '2010-04-08 03:10:10'),
+('FileCompiler__d367fb24d90abcc2c4ec46e6ee7eb5fc', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/templates\\/home.php","hash":"92a763079bbb5af7da1fa9baa88bfe4c","size":878,"time":1535985090,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/home.php","hash":"92a763079bbb5af7da1fa9baa88bfe4c","size":878,"time":1535985090}}', '2010-04-08 03:10:10'),
+('FileCompiler__34de5b66b5d9ded83f0cf7f93123b9dc', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/finished.php","hash":"b389c166f04239b71b589ac6ba492436","size":320,"time":1535985091,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/finished.php","hash":"b389c166f04239b71b589ac6ba492436","size":320,"time":1535985091}}', '2010-04-08 03:10:10'),
+('FileCompiler__62442dcd022e8e06ddf75cd9d645a637', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/templates\\/mat.php","hash":"a6e553402eef6061ad3e71956fc07284","size":324,"time":1535985090,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/mat.php","hash":"a6e553402eef6061ad3e71956fc07284","size":324,"time":1535985090}}', '2010-04-08 03:10:10'),
 ('FileCompiler__b35a176675f3678ea8c39ca1d01cc079', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/templates\\/basic-page.php","hash":"6aefcc15307cefd47ec4dea16eeab1cd","size":614,"time":1535746033,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/basic-page.php","hash":"6aefcc15307cefd47ec4dea16eeab1cd","size":614,"time":1535746033}}', '2010-04-08 03:10:10'),
-('FileCompiler__b35045599b31c25ea84e7460058af2eb', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/templates\\/admin.php","hash":"a7ea56fd5a2d2c698a5baf7407b90d07","size":482,"time":1535746033,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/admin.php","hash":"a7ea56fd5a2d2c698a5baf7407b90d07","size":482,"time":1535746033}}', '2010-04-08 03:10:10'),
+('FileCompiler__b35045599b31c25ea84e7460058af2eb', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/templates\\/admin.php","hash":"9636f854995462a4cb877cb1204bc2fe","size":467,"time":1535985091,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/admin.php","hash":"9636f854995462a4cb877cb1204bc2fe","size":467,"time":1535985091}}', '2010-04-08 03:10:10'),
 ('FileCompiler__755ea0cc80c95f6db012a602f8ffee59', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/templates\\/_ajax_main.php","hash":"ed5de898ac2a3a34475243c8a877abe8","size":79,"time":1535746033,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/_ajax_main.php","hash":"ed5de898ac2a3a34475243c8a877abe8","size":79,"time":1535746033}}', '2010-04-08 03:10:10'),
 ('FileCompiler__3c93e110012b3057dd4a06eefe644db8', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/templates\\/api-elements.php","hash":"62810433d5d89986f4b0a3f6daee22f7","size":421,"time":1535746033,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/api-elements.php","hash":"62810433d5d89986f4b0a3f6daee22f7","size":421,"time":1535746033}}', '2010-04-08 03:10:10'),
 ('FileCompiler__c1b050f8f6c83ef861d714d8f14e2951', '{"source":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/templates\\/api-get-scale.php","hash":"dae13f2ddd66621a248659b5a54e5b64","size":600,"time":1535957404,"ns":"ProcessWire"},"target":{"file":"C:\\/xampp\\/htdocs\\/cw-be\\/public_html\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/api-get-scale.php","hash":"dae13f2ddd66621a248659b5a54e5b64","size":600,"time":1535957404}}', '2010-04-08 03:10:10');
@@ -261,7 +261,7 @@ CREATE TABLE `field_body` (
 
 INSERT INTO `field_body` (`pages_id`, `data`) VALUES
 (27, '<h3>The page you were looking for is not found.</h3><p>Please use our search engine or navigation above to find the page.</p>'),
-(1, '<h2>What is ProcessWire?</h2>\r\n\r\n<p>ProcessWire gives you full control over your fields, templates and markup. It provides a powerful template system that works the way you do. Not to mention, ProcessWire''s API makes working with your content easy and enjoyable. <a href="http://processwire.com">Learn more</a></p>\r\n\r\n<h3>About this site profile</h3>\r\n\r\n<p>This is a basic minimal site for you to use in developing your own site or to learn from. There are a few pages here to serve as examples, but this site profile does not make any attempt to demonstrate all that ProcessWire can do. To learn more or ask questions, visit the <a href="http://www.processwire.com/talk/" target="_blank">ProcessWire forums</a> or <a href="http://modules.processwire.com/categories/site-profile/">browse more site profiles</a>. If you are building a new site, this minimal profile is a good place to start. You may use these existing templates and design as they are, or you may replace them entirely.</p>\r\n\r\n<h3>Browse the site</h3>'),
+(1, '<h2>What is ProcessWire?</h2>\n\n<p>ProcessWire gives you full control over your fields, templates and markup. It provides a powerful template system that works the way you do. Not to mention, ProcessWire''s API makes working with your content easy and enjoyable. <a href="http://processwire.com">Learn more</a></p>\n\n<h3>About this site profile</h3>\n\n<p>This is a basic minimal site for you to use in developing your own site or to learn from. There are a few pages here to serve as examples, but this site profile does not make any attempt to demonstrate all that ProcessWire can do. To learn more or ask questions, visit the <a href="http://www.processwire.com/talk/" target="_blank" rel="noreferrer noopener">ProcessWire forums</a> or <a href="http://modules.processwire.com/categories/site-profile/">browse more site profiles</a>. If you are building a new site, this minimal profile is a good place to start. You may use these existing templates and design as they are, or you may replace them entirely.</p>\n\n<h3>Browse the site</h3>'),
 (1002, '<h2>Ut capio feugiat saepius torqueo olim</h2>\r\n\r\n<h3>In utinam facilisi eum vicis feugait nimis</h3>\r\n\r\n<p>Iusto incassum appellatio cui macto genitus vel. Lobortis aliquam luctus, roto enim, imputo wisi tamen. Ratis odio, genitus acsi, neo illum consequat consectetuer ut.</p>\r\n\r\n<blockquote>\r\n<p>Wisi fere virtus cogo, ex ut vel nullus similis vel iusto. Tation incassum adsum in, quibus capto premo diam suscipere facilisi. Uxor laoreet mos capio premo feugait ille et. Pecus abigo immitto epulae duis vel. Neque causa, indoles verto, decet ingenium dignissim.</p>\r\n</blockquote>\r\n\r\n<p>Patria iriure vel vel autem proprius indoles ille sit. Tation blandit refoveo, accumsan ut ulciscor lucidus inhibeo capto aptent opes, foras.</p>\r\n\r\n<h3>Dolore ea valde refero feugait utinam luctus</h3>\r\n\r\n<p><img alt="Copyright by Austin Cramer for DesignIntelligence. This is a placeholder while he makes new ones for us." class="align_left"	src="/site/assets/files/1002/psych_cartoon_4-20.400x0.jpg" />Usitas, nostrud transverbero, in, amet, nostrud ad. Ex feugiat opto diam os aliquam regula lobortis dolore ut ut quadrum. Esse eu quis nunc jugis iriure volutpat wisi, fere blandit inhibeo melior, hendrerit, saluto velit. Eu bene ideo dignissim delenit accumsan nunc. Usitas ille autem camur consequat typicus feugait elit ex accumsan nutus accumsan nimis pagus, occuro. Immitto populus, qui feugiat opto pneum letalis paratus. Mara conventio torqueo nibh caecus abigo sit eum brevitas. Populus, duis ex quae exerci hendrerit, si antehabeo nobis, consequat ea praemitto zelus.</p>\r\n\r\n<p>Immitto os ratis euismod conventio erat jus caecus sudo. code test Appellatio consequat, et ibidem ludus nulla dolor augue abdo tego euismod plaga lenis. Sit at nimis venio venio tego os et pecus enim pneum magna nobis ad pneum. Saepius turpis probo refero molior nonummy aliquam neque appellatio jus luctus acsi. Ulciscor refero pagus imputo eu refoveo valetudo duis dolore usitas. Consequat suscipere quod torqueo ratis ullamcorper, dolore lenis, letalis quia quadrum plaga minim.</p>'),
 (1001, '<h2>Si lobortis singularis genitus ibidem saluto.</h2><p>Dolore ad nunc, mos accumsan paratus duis suscipit luptatum facilisis macto uxor iaceo quadrum. Demoveo, appellatio elit neque ad commodo ea. Wisi, iaceo, tincidunt at commoveo rusticus et, ludus. Feugait at blandit bene blandit suscipere abdo duis ideo bis commoveo pagus ex, velit. Consequat commodo roto accumsan, duis transverbero.</p>'),
 (1004, '<h2>Pertineo vel dignissim, natu letalis fere odio</h2><p>Magna in gemino, gilvus iusto capto jugis abdo mos aptent acsi qui. Utrum inhibeo humo humo duis quae. Lucidus paulatim facilisi scisco quibus hendrerit conventio adsum.</p><h3>Si lobortis singularis genitus ibidem saluto</h3><ul><li>Feugiat eligo foras ex elit sed indoles hos elit ex antehabeo defui et nostrud.</li><li>Letatio valetudo multo consequat inhibeo ille dignissim pagus et in quadrum eum eu.</li><li>Aliquam si consequat, ut nulla amet et turpis exerci, adsum luctus ne decet, delenit.</li><li>Commoveo nunc diam valetudo cui, aptent commoveo at obruo uxor nulla aliquip augue.</li></ul><p>Iriure, ex velit, praesent vulpes delenit capio vero gilvus inhibeo letatio aliquip metuo qui eros. Transverbero demoveo euismod letatio torqueo melior. Ut odio in suscipit paulatim amet huic letalis suscipere eros causa, letalis magna.</p><ol><li>Feugiat eligo foras ex elit sed indoles hos elit ex antehabeo defui et nostrud.</li><li>Letatio valetudo multo consequat inhibeo ille dignissim pagus et in quadrum eum eu.</li><li>Aliquam si consequat, ut nulla amet et turpis exerci, adsum luctus ne decet, delenit.</li><li>Commoveo nunc diam valetudo cui, aptent commoveo at obruo uxor nulla aliquip augue.</li></ol>');
@@ -320,10 +320,10 @@ CREATE TABLE `field_headline` (
 --
 
 INSERT INTO `field_headline` (`pages_id`, `data`) VALUES
-(1, 'Minimal Site Profile'),
+(1, 'An open, accessible communication tool for everyone.'),
 (1001, 'About Us'),
 (27, '404 Page Not Found'),
-(1031, 'Talking Mat');
+(1031, 'Your Communication Workspace');
 
 -- --------------------------------------------------------
 
@@ -509,7 +509,7 @@ CREATE TABLE `field_sidebar` (
 --
 
 INSERT INTO `field_sidebar` (`pages_id`, `data`) VALUES
-(1, '<h3>About ProcessWire</h3>\r\n\r\n<p>ProcessWire is an open source CMS and web application framework aimed at the needs of designers, developers and their clients.</p>\r\n\r\n<ul>\r\n	<li><a href="http://processwire.com/talk/">Support</a>&nbsp;</li>\r\n	<li><a href="http://processwire.com/docs/">Documentation</a></li>\r\n	<li><a href="http://processwire.com/docs/tutorials/">Tutorials</a></li>\r\n	<li><a href="http://cheatsheet.processwire.com">API Cheatsheet</a></li>\r\n	<li><a href="http://modules.processwire.com">Modules/Plugins</a></li>\r\n</ul>'),
+(1, '<h3>About ProcessWire</h3>\n\n<p>ProcessWire is an open source CMS and web application framework aimed at the needs of designers, developers and their clients.</p>\n\n<ul><li><a href="http://processwire.com/talk/">Support</a> </li>\n	<li><a href="http://processwire.com/docs/">Documentation</a></li>\n	<li><a href="http://processwire.com/docs/tutorials/">Tutorials</a></li>\n	<li><a href="http://cheatsheet.processwire.com">API Cheatsheet</a></li>\n	<li><a href="http://modules.processwire.com">Modules/Plugins</a></li>\n</ul>'),
 (1002, '<h3>Sudo nullus</h3>\r\n\r\n<p>Et torqueo vulpes vereor luctus augue quod consectetuer antehabeo causa patria tation ex plaga ut. Abluo delenit wisi iriure eros feugiat probo nisl aliquip nisl, patria. Antehabeo esse camur nisl modo utinam. Sudo nullus ventosus ibidem facilisis saepius eum sino pneum, vicis odio voco opto.</p>');
 
 -- --------------------------------------------------------
@@ -552,7 +552,7 @@ INSERT INTO `field_summary` (`pages_id`, `data`) VALUES
 (1001, 'This is a placeholder page with two child pages to serve as an example. '),
 (1005, 'View this template''s source for a demonstration of how to create a basic site map. '),
 (1004, 'Mos erat reprobo in praesent, mara premo, obruo iustum pecus velit lobortis te sagaciter populus.'),
-(1, 'ProcessWire is an open source CMS and web application framework aimed at the needs of designers, developers and their clients. ');
+(1, 'CW is a tool to help give everyone a voice.');
 
 -- --------------------------------------------------------
 
@@ -601,7 +601,7 @@ INSERT INTO `field_title` (`pages_id`, `data`) VALUES
 (52, 'Administer users'),
 (53, 'User can update profile/password'),
 (54, 'Lock or unlock a page'),
-(1, 'Home'),
+(1, 'Communication Workspace'),
 (1001, 'About'),
 (1002, 'Child page example 1'),
 (1000, 'Search'),
@@ -631,7 +631,7 @@ INSERT INTO `field_title` (`pages_id`, `data`) VALUES
 (1028, 'Maybe'),
 (1029, 'Bad'),
 (1030, 'Disagree'),
-(1031, 'Mat'),
+(1031, 'Your Workspace'),
 (1032, 'Holiday'),
 (1033, 'api'),
 (1034, 'elements'),
@@ -791,7 +791,7 @@ CREATE TABLE `pages` (
 --
 
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES
-(1, 0, 1, 'home', 9, '2018-04-13 08:57:37', 41, '2018-04-12 16:02:23', 2, '2018-04-12 17:02:23', 0),
+(1, 0, 1, 'home', 9, '2018-09-03 18:20:58', 41, '2018-04-12 16:02:23', 2, '2018-04-12 17:02:23', 0),
 (2, 1, 2, 'backend', 1035, '2018-04-12 16:02:45', 40, '2018-04-12 16:02:23', 2, '2018-04-12 17:02:23', 8),
 (3, 2, 2, 'page', 21, '2018-04-12 16:02:23', 41, '2018-04-12 16:02:23', 2, '2018-04-12 17:02:23', 0),
 (6, 3, 2, 'add', 21, '2018-04-12 16:06:28', 40, '2018-04-12 16:02:23', 2, '2018-04-12 17:02:23', 1),
@@ -856,7 +856,7 @@ INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modif
 (1028, 1024, 46, 'maybe', 1, '2018-04-12 16:20:34', 41, '2018-04-12 16:20:32', 41, '2018-04-12 17:20:34', 3),
 (1029, 1024, 46, 'bad', 1, '2018-04-12 16:20:43', 41, '2018-04-12 16:20:41', 41, '2018-04-12 17:20:43', 4),
 (1030, 1024, 46, 'disagree', 1, '2018-04-12 16:20:58', 41, '2018-04-12 16:20:54', 41, '2018-04-12 17:20:58', 5),
-(1031, 1, 43, 'mat', 1, '2018-04-12 16:21:36', 41, '2018-04-12 16:21:24', 41, '2018-04-12 17:21:36', 5),
+(1031, 1, 43, 'workspace', 1, '2018-09-03 15:02:54', 41, '2018-04-12 16:21:24', 41, '2018-04-12 17:21:36', 5),
 (1032, 1014, 44, 'holiday', 1, '2018-04-13 08:55:57', 41, '2018-04-12 21:16:15', 41, '2018-04-13 09:55:57', 4),
 (1033, 1, 49, 'api', 1, '2018-08-28 16:07:28', 41, '2018-04-13 08:56:31', 41, '2018-04-13 09:56:31', 7),
 (1034, 1044, 50, 'elements', 1, '2018-08-28 16:08:09', 41, '2018-04-13 08:56:48', 41, '2018-04-13 09:56:48', 0),
@@ -1029,7 +1029,8 @@ INSERT INTO `page_path_history` (`path`, `pages_id`, `created`) VALUES
 ('/backend/api', 1033, '2018-04-13 08:57:37'),
 ('/api/getz', 1044, '2018-08-28 16:07:14'),
 ('/api/scales', 1035, '2018-08-28 16:07:43'),
-('/api/elements', 1034, '2018-08-28 16:08:09');
+('/api/elements', 1034, '2018-08-28 16:08:09'),
+('/mat', 1031, '2018-09-03 15:02:54');
 
 -- --------------------------------------------------------
 
@@ -1048,7 +1049,7 @@ CREATE TABLE `session_login_throttle` (
 --
 
 INSERT INTO `session_login_throttle` (`name`, `attempts`, `last_attempt`) VALUES
-('admin', 1, 1535906190);
+('admin', 1, 1535998808);
 
 -- --------------------------------------------------------
 
@@ -1070,15 +1071,15 @@ CREATE TABLE `templates` (
 --
 
 INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES
-(2, 'admin', 2, 8, 0, '{"useRoles":1,"parentTemplates":[2],"allowPageNum":1,"redirectLogin":23,"slashUrls":1,"noGlobal":1,"compile":3,"modified":1535746033,"ns":"ProcessWire"}'),
+(2, 'admin', 2, 8, 0, '{"useRoles":1,"parentTemplates":[2],"allowPageNum":1,"redirectLogin":23,"slashUrls":1,"noGlobal":1,"compile":3,"modified":1535985091,"ns":"ProcessWire"}'),
 (3, 'user', 3, 8, 0, '{"useRoles":1,"noChildren":1,"parentTemplates":[2],"slashUrls":1,"pageClass":"User","noGlobal":1,"noMove":1,"noTrash":1,"noSettings":1,"noChangeTemplate":1,"nameContentTab":1}'),
 (4, 'role', 4, 8, 0, '{"noChildren":1,"parentTemplates":[2],"slashUrls":1,"pageClass":"Role","noGlobal":1,"noMove":1,"noTrash":1,"noSettings":1,"noChangeTemplate":1,"nameContentTab":1}'),
 (5, 'permission', 5, 8, 0, '{"noChildren":1,"parentTemplates":[2],"slashUrls":1,"guestSearchable":1,"pageClass":"Permission","noGlobal":1,"noMove":1,"noTrash":1,"noSettings":1,"noChangeTemplate":1,"nameContentTab":1}'),
-(1, 'home', 1, 0, 0, '{"useRoles":1,"noParents":1,"slashUrls":1,"compile":3,"modified":1535746033,"ns":"ProcessWire","roles":[37]}'),
-(29, 'basic-page', 83, 0, 0, '{"slashUrls":1,"compile":3,"modified":1535746033,"ns":"ProcessWire"}'),
-(26, 'search', 80, 0, 0, '{"noChildren":1,"noParents":1,"allowPageNum":1,"slashUrls":1,"compile":3,"modified":1535746033,"ns":"ProcessWire"}'),
-(34, 'sitemap', 88, 0, 0, '{"noChildren":1,"noParents":1,"redirectLogin":23,"slashUrls":1,"compile":3,"modified":1535746033,"ns":"ProcessWire"}'),
-(43, 'mat', 97, 0, 0, '{"slashUrls":1,"compile":3,"modified":1535746033,"ns":"ProcessWire"}'),
+(1, 'home', 1, 0, 0, '{"useRoles":1,"noParents":1,"slashUrls":1,"compile":3,"modified":1535985090,"ns":"ProcessWire","roles":[37]}'),
+(29, 'basic-page', 83, 0, 0, '{"slashUrls":1,"compile":3,"modified":1535985091,"ns":"ProcessWire"}'),
+(26, 'search', 80, 0, 0, '{"noChildren":1,"noParents":1,"allowPageNum":1,"slashUrls":1,"compile":3,"modified":1535985090,"ns":"ProcessWire"}'),
+(34, 'sitemap', 88, 0, 0, '{"noChildren":1,"noParents":1,"redirectLogin":23,"slashUrls":1,"compile":3,"modified":1535985090,"ns":"ProcessWire"}'),
+(43, 'mat', 97, 0, 0, '{"slashUrls":1,"compile":3,"modified":1535985090,"ns":"ProcessWire"}'),
 (44, 'element', 98, 0, 0, '{"slashUrls":1,"compile":3,"label":"Topic","modified":1523549663}'),
 (45, 'scale-group', 99, 0, 0, '{"childTemplates":[46],"slashUrls":1,"compile":3,"modified":1523624870}'),
 (46, 'scale-element', 100, 0, 0, '{"noChildren":1,"parentTemplates":[45],"slashUrls":1,"compile":3,"modified":1523549479}'),

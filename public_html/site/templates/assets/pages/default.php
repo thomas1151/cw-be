@@ -1,11 +1,11 @@
 <header>
-<div class="title">Communication Workspace</div>
+<div class="title"><?=$page->title?></div>
 </header>
 <div class="hero">
     <div class="spiel-wrap">
         <div class="spiel">
-            <div class="main-spiel">An open, accessible communication tool for everyone.</div>
-            <div class="sub-spiel">CW is a tool to help give everyone a voice. </div>
+            <div class="main-spiel"><?= $page->headline?></div>
+            <div class="sub-spiel"><?= $page->summary?></div>
             <a class="action-spiel"  href="<?= $pages->get("template=mat")->url?>"><div class="action"><i class="fas fa-arrow-right"></i>Go to your workspace</div></a>
         </div>
     </div>
