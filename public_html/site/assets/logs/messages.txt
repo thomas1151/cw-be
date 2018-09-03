@@ -7,3 +7,4 @@
 2018-04-12 18:07:53	admin	http://localhost/mats/backend/setup/template/removeFields	Deleted field "sidebar" data in 0 row(s) from 0 page(s) using template "element". [page-by-page]
 2018-04-13 10:57:37	admin	http://localhost/mats/backend/page/sort/	Updated sort for 9 pages
 2018-09-02 18:36:23	guest	http://localhost/cw-be/public_html/backend/login/	Created session path C:/xampp/htdocs/cw-be/public_html/site/assets/sessions/
+2018-09-03 11:51:35	admin	http://localhost/cw-be/public_html/backend/setup/field/send-templates-save?id=100	Deleted field "linked_category" data in 0 row(s) from 0 page(s) using template "element". [page-by-page]
