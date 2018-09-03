@@ -48,7 +48,7 @@
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/main.css" />
 	<script>var site_root_url = "<?php echo $pages->get(1)->httpUrl;?>";</script>
-	<script>window['site_root_url'] = "<?php echo $pages->get(1)->httpUrl;?>";</script>
+	<script>var ajax_src = "<?php echo $pages->get(1)->httpUrl;?>";</script>
 
 </head>
 <body>
@@ -68,6 +68,6 @@
 
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
 
-	<!-- <script src="<?php echo $config->urls->templates?>scripts/main.js"></script> -->
+	<script src="<?php echo $config->urls->templates?>scripts/main.js"></script>
 </body>
 </html>
