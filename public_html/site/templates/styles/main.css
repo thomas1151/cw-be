@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import "dragula.min.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|700');
 html {
   line-height: 1.15;
   /* 1 */
@@ -2641,369 +2642,121 @@ main {
   width: 100%;
   height: 100%;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
-body {
-  overflow: hidden;
-}
-.ui-wrapper {
-  height: 100%;
-}
-.ui-wrapper-inner {
-  height: 100%;
-}
-.ui-wrapper-inner ul {
-  list-style: none;
-}
-.ui-wrapper,
-.ver-box {
-  display: flex;
-  flex-direction: column;
-}
-.hoz-box {
-  display: flex;
-  flex-direction: row;
-}
-.scale {
-  display: flex;
-  flex: 1;
-  color: white;
-}
-.scale .scale-value {
-  margin: .5em;
-  padding: 1vh .5em;
-  text-align: center;
-  border: 1px solid #f6f6f6;
-  border-radius: 2em;
-  transition: .2s all;
-  background: #6f7d95;
-}
-.scale .scale-value:hover {
-  background: #1da1f2;
-}
-.scale .scale-list {
-  width: 100%;
-  overflow: auto;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-.scale .scale-list ul {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-.scale .scale-list .item {
-  flex-grow: 0;
-  list-style: none;
-  padding: 1em .5em;
-  margin: .5em;
-  border: 1px solid #f2f2f2;
-  border-radius: .5em;
-  color: #343f52;
-  background: #f1f1f1;
-  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-}
-.scale .scale-group {
-  border-left: 1px solid rgba(200, 200, 200, 0.2);
-  border-right: 1px solid rgba(200, 200, 200, 0.2);
-  padding: 0;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-.scale .scale-header {
-  display: flex;
-  background: none;
-  padding: 1em;
-}
-.workspace {
-  background: #ececec;
-  flex: 1;
-  display: flex;
-}
-.controls {
-  background: #6f7d95;
-  padding: 1em;
-}
-.controls label {
-  color: rgba(242, 242, 242, 0.86);
-  display: block;
-  margin: .5em 0 0 0;
-}
-.control-group {
-  text-align: center;
-}
-.control-group button {
-  background: #1da1f2;
-  color: #f1f1f1;
-  letter-spacing: -0.04em;
-  font-weight: 600;
-  transition: .1s all;
-}
-.control-group button:hover {
-  background: #0c85d0;
-}
-.right-controls {
-  text-align: right;
-}
-.left-controls {
-  text-align: left;
-}
-.active-topic {
-  padding: 1em;
-  border: 1px solid #f6f6f6;
-  border-radius: 2px;
-  font-weight: bolder;
-  letter-spacing: -0.03em;
-  font-size: 120%;
-  color: #f1f1f1;
-  list-style-type: none;
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
-  background: rgba(250, 250, 250, 0.8);
-  color: darkslategrey;
-  border-radius: .5em;
-}
-.active-topic:before {
-  font-style: italic;
-  color: #ececec;
-  font-size: 90%;
-  font-weight: 300;
-}
-.last-topic {
-  text-align: center;
-  padding: 1em;
-  font-style: italic;
-  color: #f6f6f6;
-}
-.last-topic span {
-  font-weight: bolder;
-  letter-spacing: -0.03em;
-}
-button {
-  border: 0;
-  padding: .5em;
-  margin: .1em;
-  border-radius: 1em;
-}
-.positive {
-  background: lightgreen;
-}
-.column {
-  height: 100%;
-}
-.row {
-  margin: 0 !important;
-}
-[class*="col-xs-"] {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-.menu-overlay {
-  overflow-y: auto;
-  background: #343f52;
-  height: 100%;
-  display: none;
-  visibility: hidden;
-}
-.menu-overlay ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.menu-overlay .item {
-  color: white;
-  padding: 1em;
-  margin: .5em 0;
-  background: rgba(50, 50, 50, 0.4);
-}
-.visible {
-  display: inherit;
-  visibility: visible;
-}
-.view-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.item i.fa {
-  display: inline;
-  padding: .5em;
-}
-li.gu-mirror {
-  flex-grow: 0;
-  list-style: none;
-  padding: 1em .5em;
-  margin: .5em;
-  border: 1px solid #f2f2f2;
-  border-radius: .5em;
-  background: #f1f1f1;
-  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-  color: #343f52;
-}
-.elem-image {
-  max-width: 100%;
-  padding: 0;
-  margin: 0 auto .5em auto;
-  max-height: 5rem;
-  display: block;
+* {
   box-sizing: border-box;
 }
-i.fa {
-  display: block;
+header {
   width: 100%;
-  padding: .5rem 0;
-}
-.mobile-hidden {
-  display: none;
-}
-.no-display {
-  display: none;
-}
-#modal {
-  transition: 0.2s all ease-in;
+  padding: .5em;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  color: #eee;
+  height: auto;
   top: 0;
-  left: 0;
-  z-index: 5;
 }
-.visible {
-  visibility: visible;
-  opacity: 1;
+header .title {
+  font-size: 135%;
+  font-weight: 700;
 }
-.hidden {
-  visibility: hidden;
-  opacity: 0;
-  display: none;
-}
-.focused-element {
-  z-index: 25;
-  position: relative;
-}
-.modal-card {
-  font-weight: 600;
-  color: #333;
-  letter-spacing: -0.025em;
-  background: #ffffff;
-  padding: .75em 1em .75em 1em;
-  border-radius: .5em;
-  min-width: 30%;
-  box-shadow: 0 2px 6px 0;
-  border-top: .3em solid dodgerblue;
-}
-.modal-card label {
-  font-weight: 300;
-}
-.modal-card .card-header {
+.hero {
   display: flex;
-}
-.modal-card .card-header h2 {
-  flex: 1;
-  font-size: 110%;
-}
-.modal-card .quit-modal {
-  background: red;
-  width: 2.1em;
-  height: 2.1em;
-  color: white;
-}
-.modal-content {
-  background: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  width: 100%;
-}
-.modal-content-wrapper .card-wrapper {
-  display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
   width: 100%;
+  background: #25689C;
+  padding: 3em 0;
+  min-height: 20em;
 }
-.form-elements {
-  visibility: hidden;
-  display: none;
+.hero .spiel-wrap {
+  background: rgba(50, 50, 50, 0.3);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.18);
+  align-items: center;
+  display: flex;
+  color: #eee;
+  margin: 1em 0;
+  border-radius: .5em;
+  padding: 1em;
 }
-.modal-form {
-  /**
-    * Create the hover event of the tick
-    */
-  /**
-    * Create the checkbox state for the tick
-    */
+.hero .spiel-wrap .spiel .main-spiel {
+  font-size: 175%;
+  font-weight: 700;
 }
-.modal-form input {
-  padding: .5em;
-  font-size: 1em;
-  width: 100%;
-  box-sizing: border-box;
-}
-.modal-form .form-element {
+.hero .spiel-wrap .spiel .sub-spiel {
   padding: .5em 0;
+  font-size: 140%;
 }
-.modal-form .form-body {
-  min-width: 33.5em;
-  padding: 1.5em;
+.hero .action-spiel {
+  padding: 1em;
+  background: #50BA1B;
+  border-radius: 1em;
+  margin-top: .5em;
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: .3s all;
 }
-.modal-form .custom-checkbox {
-  width: 1.5em;
+.hero .action-spiel:hover {
+  background: #4aad19;
+}
+.hero .action-spiel:active {
+  background: #439b16;
+}
+.hero .action i {
+  padding: 0 .5em;
+}
+.discussion {
+  padding: 0em 5em;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+footer {
+  background: #ececec;
+  padding: 3em 5em;
   position: relative;
-}
-.modal-form .custom-checkbox label {
-  cursor: pointer;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 0;
-  left: 0;
-  background: #eee;
-  border: 1px solid #ddd;
-}
-.modal-form .custom-checkbox label:after {
-  opacity: 0.2;
-  content: '';
-  position: absolute;
-  width: 9px;
-  height: 5px;
-  background: transparent;
-  top: 6px;
-  left: 7px;
-  border: 3px solid #333;
-  border-top: none;
-  border-right: none;
-  transform: rotate(-45deg);
-}
-.modal-form .custom-checkbox label:hover::after {
-  opacity: 0.5;
-}
-.modal-form .custom-checkbox input[type=checkbox]:checked + label:after {
-  opacity: 1;
-}
-.modal-form .window-control {
-  text-align: right;
-}
-.modal-form .window-control .row {
-  padding: 0;
-}
-.modal-form .window-control h2,
-.modal-form .window-control button {
-  display: inline-block;
-  margin: 0;
-  text-align: center;
-}
-.modal-form .window-control button {
-  width: 10%;
+  bottom: 0;
+  width: 100%;
   align-self: flex-end;
 }
-.modal-form button {
+.main-wrap {
+  min-height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.main-wrap .content {
+  flex: 1;
+}
+.options {
+  display: flex;
+  padding: 2em 5em;
+}
+.options .option {
+  padding: 1em;
+  text-decoration: none;
+  color: #777;
+}
+.options .option .option-content-wrap {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.18);
   width: 100%;
-  display: inline-block;
-  border: 0;
-  padding: .5em;
-  color: white;
-  border-radius: 1.5em;
-  background: mediumspringgreen;
-  margin: 1em 0;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  padding: 1em 0;
+  transition: .1s all;
+}
+.options .option .option-content-wrap:hover {
+  background: rgba(240, 240, 240, 0.8);
+}
+.options .option i {
+  font-size: 150%;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+}
+.options .option .info {
+  width: 100%;
+  text-align: center;
 }
 /*==================================================
 =            Bootstrap 3 Media Queries             =
@@ -3011,21 +2764,24 @@ i.fa {
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  .workspace .scale-list .elem-image {
-    max-width: 100%;
-  }
-}
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-  .mobile-hidden {
-    display: inherit;
+  .content {
+    padding: 0 3.5em;
+  }
+  .action-spiel {
+    max-width: 50%;
   }
 }
 /* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .content {
+    padding: 0 7.5em;
+  }
+}
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
-  .elem-image {
-    padding: .5em 5rem;
+  .content {
+    padding: 0 12.5em;
   }
 }
