@@ -1,1 +1,3 @@
-<script src="<?php echo $config->assets?>ui/main.js"></script>
+<script src=""></script>
+<div class="ui-wrapper" id="ui-wrapper">
+</div>
