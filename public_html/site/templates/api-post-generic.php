@@ -8,4 +8,4 @@
 // $fields = ['title', 'created','image','id'];
 // $template_name = "api-call";
 
-$template = "element";
+$template_name = "api-post";

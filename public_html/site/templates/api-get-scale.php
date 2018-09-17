@@ -11,5 +11,5 @@ if($_GET['id']){
 if($_GET['stid']){
  $search_string .= ",string_identifier=".$_GET["stid"];    
 };
-$fields = ['title', 'created','image','id','children','string_identifier'];
+$fields = ['title', 'created','image','id','children','string_identifier','summary'];
 $template_name = "api-call";

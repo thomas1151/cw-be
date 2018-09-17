@@ -8,5 +8,5 @@
 // $content = $page->body . renderNav($page->children); 
 
 $search_string = "template=scale-group";
-$fields = ['title', 'created','id','children','string_identifier'];
+$fields = ['title', 'created','id','children','string_identifier','image','summary'];
 $template_name = "api-call";

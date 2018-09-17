@@ -1,4 +1,5 @@
-<?php
+<?php namespace ProcessWire;
+ header("Access-Control-Allow-Origin: *");
 
 if($config->ajax) {
     // page was requested from ajax
@@ -11,9 +12,12 @@ $p->title = $_POST['name']; // give it a name used in the url for the page
 
 // $p->title = 'My New Page'; // set page title (not neccessary but recommended)
 
-$p->save();
+
 // $p->tags  = $_POST['tags'];
 
 // populate fields
 
 // $p->save();
+$p->save();
+echo($p);
+
