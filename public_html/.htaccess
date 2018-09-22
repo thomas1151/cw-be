@@ -108,6 +108,21 @@ DirectoryIndex index.php index.html index.htm
     SetEnv HTTP_MOD_REWRITE On
   </IfModule>
 
+
+  # ------------------------------------------------------------------------------
+  # | Cross-domain AJAX requests |
+  # ------------------------------------------------------------------------------
+  
+  # Enable cross-origin AJAX requests.
+  # http://code.google.com/p/html5security/wiki/CrossOriginRequestSecurity
+  # http://enable-cors.org/
+  
+  <IfModule mod_headers.c>
+  Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+
+
+
   # -----------------------------------------------------------------------------------------------
   # 11. OPTIONAL: Set a rewrite base if rewrites aren't working properly on your server.
   # And if your site directory starts with a "~" you will most likely have to use this.

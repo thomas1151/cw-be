@@ -9,5 +9,5 @@
     You need to enable JavaScript to run this app.
 </noscript>
 <div id="root"></div>
-<script type="text/javascript" src="<?= $config->urls->assets?>cw-ui/build/static/js/main.220ea57e.js"></script>
+<script type="text/javascript" src="<?= $config->urls->assets?>cw-ui/build/static/js/main.218a73a2.js"></script>
 </body>
